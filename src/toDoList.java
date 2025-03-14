@@ -23,11 +23,11 @@ public class toDoList {
         t.addDate();
         tasks.add(t);
     }
-
+    // a Getter for the Array List of tasks.
     public ArrayList<Task> getTasks() {
         return new ArrayList<>(tasks);
     }
-
+    //a Method that adds a task to the Array List and stores the date it was added.
     public void addTask(Task t) {
         if (t == null) {
             throw new NullPointerException("Task is null");
