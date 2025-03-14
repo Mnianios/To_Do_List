@@ -19,9 +19,9 @@ public class Menu {
                 switch (choice) {
                     case 1 -> {
                         System.out.print("Enter task name: ");
-                        String taskName = scanner.nextLine();
+                        String taskName = scanner.nextLine(); // takes User input for task name
                         try {
-                            list.addTask(new Task(taskName));
+                            list.addTask(new Task(taskName)); // initializes a new task object and adds it to the list
                             System.out.println("Task added successfully!");
                         } catch (IllegalArgumentException | NullPointerException e) {
                             System.out.println("Error: " + e.getMessage());

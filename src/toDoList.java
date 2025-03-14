@@ -38,14 +38,14 @@ public class toDoList {
         t.addDate();
         tasks.add(t);
     }
-
+    // method for completing a task
     public void completed(Task t) {
         if (t == null || !tasks.contains(t)) {
             System.out.println("Task does not exist in the to-do list.");
             return;
         }
-        completedTasks.add(t);
-        tasks.remove(t);
+        completedTasks.add(t); //adds it to the completed tasks array
+        tasks.remove(t);    // and removes it from the active tasks array
         System.out.println("Congratulations for completing [" + t.getTaskName() + "]");
     }
 
