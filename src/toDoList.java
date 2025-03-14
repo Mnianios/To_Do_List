@@ -4,12 +4,13 @@ public class toDoList {
     private ArrayList<Task> tasks;
     private ArrayList<Task> completedTasks;
 
+    //Default Constructor
     toDoList() {
         tasks = new ArrayList<>();
         completedTasks = new ArrayList<>();
 
     }
-
+    //Constructor
     toDoList(Task t) {
         this(); //calls default constructor to initialize the array list.
         //checking if the object is null
